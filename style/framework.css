@@ -34,6 +34,9 @@
 .px-20 {
   padding: 0 calc(20rem / 16);
 }
+.m-0 {
+  margin: 0;
+}
 .m-10 {
   margin: calc(10rem / 16);
 }
@@ -81,6 +84,9 @@
 }
 .bg-eee {
   background-color: #eee;
+}
+.bg-white {
+  background-color: white;
 }
 /* end background */
 
