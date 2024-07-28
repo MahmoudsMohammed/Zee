@@ -6,15 +6,14 @@
   --red-color: #f44336;
   --grey-color: #888;
   --bg-color: #eee;
-  /* 16-14 */
-  --base-font: clamp(0.875rem, 0.8315rem + 0.2174vw, 1rem);
   /* 18-16 */
-  --large-font: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
-  /* 14-12 */
-  --small-font: clamp(0.75rem, 0.7065rem + 0.2174vw, 0.875rem);
+  --base-font: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
+  /* 22-18 */
+  --large-font: clamp(1.125rem, 1.038rem + 0.4348vw, 1.375rem);
+  /* 16-14 */
+  --small-font: clamp(0.875rem, 0.8315rem + 0.2174vw, 1rem);
   --h1: clamp(1.5625rem, 1.4103rem + 0.7609vw, 2rem);
   --h2: clamp(1.25rem, 1.1413rem + 0.5435vw, 1.5625rem);
-  --h3: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
 }
 /* start spacing */
 .p-10 {
@@ -95,4 +94,18 @@
 .f-large {
   font-size: var(--large-font);
 }
+.f-bold {
+  font-weight: bold;
+}
+.t-center {
+  text-align: center;
+}
 /* end text */
+
+/* start media classes */
+@media (max-width: calc(767rem / 16)) {
+  .hide-mobile {
+    display: none;
+  }
+}
+/* end media classes */
