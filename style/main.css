@@ -58,15 +58,10 @@ aside {
   background-color: #fff;
   box-shadow: 0 0 10px #ddd;
   height: 100vh;
-  flex-basis: calc(250rem / 16);
+  flex-basis: min(250px, 10%);
   position: sticky;
   top: 0;
   left: 0;
-}
-@media (max-width: calc(767rem / 16)) {
-  aside {
-    flex-basis: calc(50rem / 16);
-  }
 }
 aside p {
   position: relative;
@@ -135,6 +130,11 @@ aside nav a {
   display: flex;
   gap: calc(15rem / 16);
 }
+@media (max-width: calc(767rem / 16)) {
+  aside nav a {
+    justify-content: center;
+  }
+}
 /* end aside */
 
 /* start header */
@@ -146,7 +146,7 @@ aside nav a {
   height: calc(32rem / 16);
 }
 .p-content .search {
-  width: min(200px, 70%);
+  width: min(calc(200rem / 16), 70%);
   transition: var(--transition-period);
   position: relative;
   border: 1px solid var(--grey-color);
@@ -162,7 +162,7 @@ aside nav a {
   -o-transition: var(--transition-period);
 }
 .p-content .search:focus-within {
-  width: min(250px, 75%);
+  width: min(calc(250rem / 16), 75%);
 }
 .p-content .search::after {
   content: '\f002';
