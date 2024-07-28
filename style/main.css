@@ -7,6 +7,7 @@
   --red-color: #f44336;
   --grey-color: #888;
   --bg-color: #eee;
+  --transition-period: 0.3s;
   /* 18-16 */
   --base-font: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
   /* 22-18 */
@@ -55,11 +56,17 @@ video {
 /* start aside */
 aside {
   background-color: #fff;
+  box-shadow: 0 0 10px #ddd;
   height: 100vh;
-  flex-basis: calc(200rem / 16);
+  flex-basis: calc(250rem / 16);
   position: sticky;
   top: 0;
   left: 0;
+}
+@media (max-width: calc(767rem / 16)) {
+  aside {
+    flex-basis: calc(50rem / 16);
+  }
 }
 aside p {
   position: relative;
@@ -92,10 +99,40 @@ aside p::before {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-
 @media (max-width: calc(767rem / 16)) {
-  aside {
-    flex-basis: calc(50rem / 16);
+  aside p::after,
+  aside p::before {
+    display: none;
   }
+}
+aside nav {
+  margin-top: calc(40rem / 16);
+}
+aside nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: calc(20rem / 16);
+}
+aside nav li {
+  padding: calc(10rem / 16);
+  border-radius: calc(10rem / 16);
+  -webkit-border-radius: calc(10rem / 16);
+  -moz-border-radius: calc(10rem / 16);
+  -ms-border-radius: calc(10rem / 16);
+  -o-border-radius: calc(10rem / 16);
+  transition: var(--transition-period);
+  -webkit-transition: var(--transition-period);
+  -moz-transition: var(--transition-period);
+  -ms-transition: var(--transition-period);
+  -o-transition: var(--transition-period);
+}
+li.active,
+aside nav li:hover {
+  background-color: #f6f6f6;
+}
+aside nav a {
+  color: black;
+  display: flex;
+  gap: calc(15rem / 16);
 }
 /* end aside */
