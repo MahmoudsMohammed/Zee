@@ -58,7 +58,7 @@ aside {
   background-color: #fff;
   box-shadow: 0 0 10px #ddd;
   height: 100vh;
-  flex-basis: min(250px, 10%);
+  flex-basis: min(250px, 15%);
   position: sticky;
   top: 0;
   left: 0;
