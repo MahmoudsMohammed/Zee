@@ -97,6 +97,9 @@
 .c-grey {
   color: var(--grey-color);
 }
+.c-main {
+  color: var(--blue-color);
+}
 .f-small {
   font-size: var(--small-font);
 }
