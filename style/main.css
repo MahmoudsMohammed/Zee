@@ -47,6 +47,34 @@ video {
 
 /* end main rules */
 
+/* start scroll bar */
+body {
+  --sb-track-color: #eeeeee;
+  --sb-thumb-color: #0075ff;
+  --sb-size: 8px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 6px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+/* end scroll bar */
+
 /* start page */
 .page {
   display: flex;
@@ -415,3 +443,43 @@ main .container {
   border-top-color: var(--green-color);
 }
 /* end targets */
+
+/* start tickets */
+.tickets {
+  text-transform: capitalize;
+}
+.tickets > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: calc(20rem / 16);
+  margin-top: calc(20rem / 16);
+}
+.tickets .box {
+  border: 1px solid #eee;
+  min-height: calc(130rem / 16);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.tickets .box i {
+  margin-bottom: 20px;
+}
+.tickets .box:nth-of-type(1) i {
+  color: var(--orange-color);
+}
+.tickets .box:nth-of-type(2) i {
+  color: var(--blue-color);
+}
+.tickets .box:nth-of-type(3) i {
+  color: var(--green-color);
+}
+.tickets .box:nth-of-type(4) i {
+  color: var(--red-color);
+}
+/* end tickets */
