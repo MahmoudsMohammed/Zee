@@ -221,6 +221,9 @@ main .container {
 .welcome {
   overflow: hidden;
 }
+.welcome > div:first-of-type {
+  min-height: calc(150rem / 16);
+}
 .welcome > div:first-of-type figure img {
   height: calc(100rem / 16);
 }
@@ -228,6 +231,11 @@ main .container {
   position: relative;
   left: calc(20rem / 16);
   bottom: calc(30rem / 16);
+}
+@media (max-width: calc(767rem / 16)) {
+  .welcome > figure {
+    left: calc(50% - 30px);
+  }
 }
 .welcome > figure img {
   width: calc(60rem / 16);
@@ -242,6 +250,12 @@ main .container {
 .welcome .statics {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+}
+@media (max-width: calc(767rem / 16)) {
+  .welcome .statics {
+    flex-direction: column;
+    gap: calc(20rem / 16);
+  }
 }
 .welcome .statics > div {
   display: flex;
