@@ -57,7 +57,7 @@ video {
 aside {
   background-color: #fff;
   box-shadow: 0 0 10px #ddd;
-  height: 100vh;
+  min-height: 100vh;
   flex-basis: min(250px, 15%);
   position: sticky;
   top: 0;
@@ -278,3 +278,43 @@ main .container {
   -o-border-radius: 6px;
 }
 /* end welcome section */
+
+/* start draft */
+.draft {
+  text-transform: capitalize;
+}
+.draft header h2 {
+  margin-bottom: calc(10rem / 16);
+}
+.draft form {
+  padding-bottom: 0;
+}
+.draft form *::placeholder {
+  text-transform: capitalize;
+  font-size: var(--small-font);
+}
+.draft form input[type='text'] {
+  border: none;
+  padding: calc(8rem / 16) 10px;
+}
+.draft form textarea {
+  min-height: calc(150rem / 16);
+  border: none;
+  padding: calc(8rem / 16) 10px;
+  resize: none;
+}
+.draft form input[type='submit'] {
+  width: fit-content;
+  border: none;
+  font-size: var(--small-font);
+  color: white;
+  background-color: var(--blue-color);
+  margin-left: auto;
+  padding: 5px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+/* end draft */
