@@ -204,3 +204,63 @@ aside nav a {
   -o-border-radius: 50%;
 }
 /* end header */
+
+/* start page container */
+main .container {
+  display: grid;
+  gap: calc(20rem / 16);
+}
+@media (min-width: calc(767rem / 16)) {
+  main .container {
+    grid-template-columns: repeat(auto-fill, minmax(calc(450rem / 16), 1fr));
+  }
+}
+/* end page container */
+
+/* start welcome section */
+.welcome {
+  overflow: hidden;
+}
+.welcome > div:first-of-type figure img {
+  height: calc(100rem / 16);
+}
+.welcome > figure {
+  position: relative;
+  left: calc(20rem / 16);
+  bottom: calc(30rem / 16);
+}
+.welcome > figure img {
+  width: calc(60rem / 16);
+  border-radius: 50%;
+  border: 1px solid white;
+  box-shadow: 0 0 5px #ccc;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.welcome .statics {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.welcome .statics > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(10rem / 16);
+}
+.welcome > a {
+  width: fit-content;
+  display: block;
+  color: white;
+  background-color: var(--blue-color);
+  margin: calc(15rem / 16) calc(15rem / 16) calc(15rem / 16) auto;
+  font-size: calc(var(--small-font) - 2px);
+  padding: 5px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+/* end welcome section */

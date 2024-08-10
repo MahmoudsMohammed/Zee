@@ -103,6 +103,9 @@
 .f-bold {
   font-weight: bold;
 }
+.f-light {
+  font-weight: light;
+}
 .t-center {
   text-align: center;
 }
@@ -115,6 +118,26 @@
   }
 }
 /* end media classes */
+
+/* start border */
+.rad-6 {
+  border-radius: calc(6rem / 16);
+  -webkit-border-radius: calc(6rem / 16);
+  -moz-border-radius: calc(6rem / 16);
+  -ms-border-radius: calc(6rem / 16);
+  -o-border-radius: calc(6rem / 16);
+}
+.rad-10 {
+  border-radius: calc(10rem / 16);
+  -webkit-border-radius: calc(10rem / 16);
+  -moz-border-radius: calc(10rem / 16);
+  -ms-border-radius: calc(10rem / 16);
+  -o-border-radius: calc(10rem / 16);
+}
+.border-gray {
+  border: 1px solid var(--grey-color);
+}
+/* end border */
 
 /* start components */
 .pageHead {
