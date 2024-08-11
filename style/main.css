@@ -493,6 +493,12 @@ main .container {
 .news {
   text-transform: capitalize;
 }
+.news .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 .news .row:not(:last-of-type) {
   border-bottom: 1px solid #eee;
 }
@@ -520,3 +526,37 @@ main .container {
   -o-border-radius: 6px;
 }
 /* end latest news */
+
+/* start tasks */
+.tasks {
+  text-transform: capitalize;
+}
+.tasks > div:last-of-type {
+  padding-top: calc(20rem / 16);
+}
+.tasks > div:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+.tasks > div h3 {
+  font-size: var(--base-font);
+  margin-bottom: calc(10rem / 16);
+}
+.tasks > div i {
+  cursor: pointer;
+  transition: var(--transition-period);
+  -webkit-transition: var(--transition-period);
+  -moz-transition: var(--transition-period);
+  -ms-transition: var(--transition-period);
+  -o-transition: var(--transition-period);
+}
+.tasks .finish {
+  opacity: 0.3;
+}
+.tasks .finish h3,
+.tasks .finish p {
+  text-decoration: line-through;
+}
+.tasks > div i:hover {
+  color: var(--red-color);
+}
+/* end tasks */
