@@ -122,6 +122,12 @@
   .hide-mobile {
     display: none;
   }
+  .column-mobile {
+    flex-direction: column;
+  }
+  .center-mobile {
+    text-align: center;
+  }
 }
 /* end media classes */
 

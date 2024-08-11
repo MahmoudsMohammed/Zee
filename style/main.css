@@ -14,6 +14,8 @@
   --large-font: clamp(1.125rem, 1.038rem + 0.4348vw, 1.375rem);
   /* 16-14 */
   --small-font: clamp(0.875rem, 0.8315rem + 0.2174vw, 1rem);
+  /* 14-12 */
+  --x-small-font: clamp(0.75rem, 0.7065rem + 0.2174vw, 0.875rem);
   --h1: clamp(1.5625rem, 1.4103rem + 0.7609vw, 2rem);
   --h2: clamp(1.25rem, 1.1413rem + 0.5435vw, 1.5625rem);
 }
@@ -87,9 +89,11 @@ aside {
   box-shadow: 0 0 10px #ddd;
   min-height: 100vh;
   flex-basis: min(250px, 15%);
+}
+aside > div {
   position: sticky;
-  top: 0;
-  left: 0;
+  top: calc(20rem / 16);
+  left: calc(10rem / 16);
 }
 aside p {
   position: relative;
@@ -276,8 +280,8 @@ main .container {
   -o-border-radius: 50%;
 }
 .welcome .statics {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 @media (max-width: calc(767rem / 16)) {
   .welcome .statics {
@@ -449,6 +453,7 @@ main .container {
   text-transform: capitalize;
 }
 .tickets > div {
+  flex: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: calc(20rem / 16);
@@ -483,3 +488,35 @@ main .container {
   color: var(--red-color);
 }
 /* end tickets */
+
+/* start latest news */
+.news {
+  text-transform: capitalize;
+}
+.news .row:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+.news .row:last-of-type {
+  padding-top: calc(20rem / 16);
+}
+.news .row div {
+  flex: 1;
+}
+.news .row div h3 {
+  margin-bottom: calc(10rem / 16);
+  font-size: var(--base-font);
+}
+.news .row span {
+  background-color: #eee;
+  padding: calc(5rem / 16);
+  font-size: var(--x-small-font);
+}
+.news img {
+  width: calc(100rem / 16);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+/* end latest news */

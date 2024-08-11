@@ -22,59 +22,61 @@
     <div class="page">
       <!-- start aside -->
       <aside class="py-20 px-10">
-        <p class="t-center f-large f-bold">Zee</p>
-        <nav>
-          <ul>
-            <li class="active">
-              <a href="">
-                <i class="fa-solid fa-chart-line fa-fw"></i>
-                <span class="hide-mobile">Dashboard</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fa-solid fa-gear fa-fw"></i>
-                <span class="hide-mobile">Settings</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fa-solid fa-user fa-fw"></i>
-                <span class="hide-mobile">Profile</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fa-solid fa-list-check fa-fw"></i>
-                <span class="hide-mobile">Projects</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fa-solid fa-graduation-cap fa-fw"></i>
-                <span class="hide-mobile">Courses</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fa-solid fa-user-group fa-fw"></i>
-                <span class="hide-mobile">Friends</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fa-solid fa-file fa-fw"></i>
-                <span class="hide-mobile">Files</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fa-solid fa-comments-dollar fa-fw"></i>
-                <span class="hide-mobile">Plans</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div>
+          <p class="t-center f-large f-bold m-0">Zee</p>
+          <nav>
+            <ul>
+              <li class="active">
+                <a href="">
+                  <i class="fa-solid fa-chart-line fa-fw"></i>
+                  <span class="hide-mobile">Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-gear fa-fw"></i>
+                  <span class="hide-mobile">Settings</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-user fa-fw"></i>
+                  <span class="hide-mobile">Profile</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-list-check fa-fw"></i>
+                  <span class="hide-mobile">Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                  <span class="hide-mobile">Courses</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-user-group fa-fw"></i>
+                  <span class="hide-mobile">Friends</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-file fa-fw"></i>
+                  <span class="hide-mobile">Files</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-comments-dollar fa-fw"></i>
+                  <span class="hide-mobile">Plans</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </aside>
       <!-- end aside -->
 
@@ -203,10 +205,12 @@
             <!-- end targets -->
 
             <!-- start tickets -->
-            <section class="tickets p-20 rad-10 bg-white">
+            <section class="tickets p-20 rad-10 bg-white d-flex f-column">
               <header>
                 <h2 class="m-0">tickets statistics</h2>
-                <span class="c-grey">everything about support tickets</span>
+                <p class="c-grey m-0 my-10 f-small">
+                  everything about support tickets
+                </p>
               </header>
               <div>
                 <div class="box">
@@ -232,6 +236,64 @@
               </div>
             </section>
             <!-- end tickets -->
+
+            <!-- start latest news -->
+            <section class="news bg-white rad-10 p-20">
+              <header>
+                <h2 class="m-0">Latest News</h2>
+              </header>
+              <div
+                class="row d-flex gap-20 align-center py-20 column-mobile center-mobile"
+              >
+                <figure class="m-0">
+                  <img src="./static/news-01.png" alt="" />
+                </figure>
+                <div>
+                  <h3 class="m-0">create sass section</h3>
+                  <p class="c-grey f-small m-0">new sass examples & tutorial</p>
+                </div>
+                <span class="c-grey rad-6">3 days ago</span>
+              </div>
+              <div
+                class="row d-flex gap-20 align-center py-20 column-mobile center-mobile"
+              >
+                <figure class="m-0">
+                  <img src="./static/news-02.png" alt="" />
+                </figure>
+                <div>
+                  <h3 class="m-0">Changed The Design</h3>
+                  <p class="c-grey f-small m-0">A Brand New Website Design</p>
+                </div>
+                <span class="c-grey rad-6">2 days ago</span>
+              </div>
+              <div
+                class="row d-flex gap-20 align-center py-20 column-mobile center-mobile"
+              >
+                <figure class="m-0">
+                  <img src="./static/news-03.png" alt="" />
+                </figure>
+                <div>
+                  <h3 class="m-0">Team Increased</h3>
+                  <p class="c-grey f-small m-0">3 Developers Joined The Team</p>
+                </div>
+                <span class="c-grey rad-6">4 days ago</span>
+              </div>
+              <div
+                class="row d-flex gap-20 align-center column-mobile center-mobile"
+              >
+                <figure class="m-0">
+                  <img src="./static/news-04.png" alt="" />
+                </figure>
+                <div>
+                  <h3 class="m-0">Added Payment Gateway</h3>
+                  <p class="c-grey f-small m-0">
+                    Many New Payment Gateways Added
+                  </p>
+                </div>
+                <span class="c-grey rad-6">5 days ago</span>
+              </div>
+            </section>
+            <!-- end latest news -->
           </div>
           <!-- end main page container -->
         </main>
