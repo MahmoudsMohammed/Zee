@@ -173,6 +173,12 @@ aside nav a {
 .p-content {
   flex-grow: 1;
 }
+.p-content > header {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  right: 0;
+}
 .p-content header img {
   width: calc(32rem / 16);
   height: calc(32rem / 16);
@@ -560,3 +566,28 @@ main .container {
   color: var(--red-color);
 }
 /* end tasks */
+
+/* start search */
+.top-search {
+  text-transform: capitalize;
+}
+.top-search .row:not(:first-of-type, :last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+.top-search .row:last-of-type {
+  padding-bottom: 0;
+}
+.top-search .row:not(:first-of-type) > span {
+  min-width: calc(35rem / 16);
+  text-align: center;
+  font-size: var(--x-small-font);
+  background-color: #eee;
+  color: #777;
+  padding: calc(5rem / 16);
+  border-radius: calc(6rem / 16);
+  -webkit-border-radius: calc(6rem / 16);
+  -moz-border-radius: calc(6rem / 16);
+  -ms-border-radius: calc(6rem / 16);
+  -o-border-radius: calc(6rem / 16);
+}
+/* end search */
