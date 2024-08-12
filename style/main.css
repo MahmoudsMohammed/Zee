@@ -591,3 +591,43 @@ main .container {
   -o-border-radius: calc(6rem / 16);
 }
 /* end search */
+
+/* start upload */
+.upload {
+  text-transform: capitalize;
+}
+.upload .row:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+.upload .row {
+  padding: calc(18rem / 16) 0;
+}
+.upload .row:last-of-type {
+  padding-bottom: 0;
+}
+.upload figure img {
+  width: calc(30rem / 16);
+  height: calc(30rem / 16);
+}
+.upload .content {
+  flex: 1;
+}
+.upload .content p {
+  font-size: var(--small-font);
+  font-weight: 500;
+  margin-bottom: calc(5rem / 16);
+}
+.upload .row > span {
+  min-width: calc(60rem / 16);
+  text-align: center;
+  font-size: var(--x-small-font);
+  color: #777;
+  background-color: #eee;
+  padding: calc(5rem / 16);
+  border-radius: calc(6rem / 16);
+  -webkit-border-radius: calc(6rem / 16);
+  -moz-border-radius: calc(6rem / 16);
+  -ms-border-radius: calc(6rem / 16);
+  -o-border-radius: calc(6rem / 16);
+}
+/* end upload */
