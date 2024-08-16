@@ -161,6 +161,7 @@ aside nav a {
   color: black;
   display: flex;
   gap: calc(15rem / 16);
+  font-size: var(--small-font);
 }
 @media (max-width: calc(767rem / 16)) {
   aside nav a {
@@ -697,6 +698,58 @@ main .container {
 /* end project */
 
 /* start reminder */
+.reminder .tasks {
+  display: flex;
+  flex-direction: column;
+  padding-top: calc(15rem / 16);
+  padding-left: calc(20rem / 16);
+  gap: calc(15rem / 16);
+}
+.reminder .task {
+  padding-left: calc(10rem / 16);
+  border-left: 2px solid var(--blue-color);
+  position: relative;
+}
+.reminder .task::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -27px;
+  transform: translateY(-50%);
+  width: calc(15rem / 16);
+  height: calc(15rem / 16);
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.reminder .task span {
+  font-size: var(--x-small-font);
+}
+.reminder .task:nth-of-type(2) {
+  border-color: var(--green-color);
+}
+.reminder .task:nth-of-type(2)::after {
+  background-color: var(--green-color);
+}
+.reminder .task:nth-of-type(3) {
+  border-color: var(--orange-color);
+}
+.reminder .task:nth-of-type(3)::after {
+  background-color: var(--orange-color);
+}
+.reminder .task:nth-of-type(4) {
+  border-color: var(--red-color);
+}
+.reminder .task:nth-of-type(4)::after {
+  background-color: var(--red-color);
+}
 /*  end reminder */
 
 /* start animations */
