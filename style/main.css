@@ -175,7 +175,7 @@ aside nav a {
 }
 .p-content > header {
   position: sticky;
-  z-index: 2;
+  z-index: 5;
   top: 0;
   right: 0;
 }
@@ -631,3 +631,80 @@ main .container {
   -o-border-radius: calc(6rem / 16);
 }
 /* end upload */
+
+/* start project */
+.project {
+  position: relative;
+  white-space: nowrap;
+}
+.project figure {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.2;
+}
+.project figure img {
+  width: calc(180rem / 16);
+  height: calc(180rem / 16);
+}
+.project .project-steps {
+  padding-left: calc(30rem / 16);
+  position: relative;
+}
+.project .project-steps::after {
+  content: '';
+  position: absolute;
+  top: calc(15rem / 16);
+  left: calc(14rem / 16);
+  width: 2px;
+  height: calc(100% - calc(30rem / 16));
+  background-color: var(--blue-color);
+}
+.project .step {
+  padding-left: calc(10rem / 16);
+  font-weight: 600;
+  position: relative;
+}
+.project .step:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  left: -26px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(20rem / 16);
+  height: calc(20rem / 16);
+  background-color: white;
+  border: 2px solid white;
+  outline: 2px solid var(--blue-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.project .step:not(.in-progress, :last-of-type)::after {
+  background-color: var(--blue-color);
+}
+.in-progress::after {
+  animation: in-progress infinite 0.8s ease-in-out;
+  -webkit-animation: in-progress infinite 0.8s ease-in-out alternate;
+}
+/* end project */
+
+/* start reminder */
+/*  end reminder */
+
+/* start animations */
+@keyframes in-progress {
+  0% {
+    background-color: var(--blue-color);
+  }
+  100% {
+  }
+}
+/* end animations */

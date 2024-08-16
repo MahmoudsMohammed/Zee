@@ -25,6 +25,9 @@
 .py-10 {
   padding: calc(10rem / 16) 0;
 }
+.py-15 {
+  padding: calc(15rem / 16) 0;
+}
 .py-20 {
   padding: calc(20rem / 16) 0;
 }
@@ -42,6 +45,12 @@
 }
 .m-20 {
   margin: calc(20rem / 16);
+}
+.mb-10 {
+  margin-bottom: calc(10rem / 16);
+}
+.mb-15 {
+  margin-bottom: calc(15rem / 16);
 }
 .my-10 {
   margin: calc(10rem / 16) 0;
@@ -114,6 +123,9 @@
 }
 .t-center {
   text-align: center;
+}
+.t-cap {
+  text-transform: capitalize;
 }
 /* end text */
 
