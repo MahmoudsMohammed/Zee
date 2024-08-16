@@ -752,6 +752,22 @@ main .container {
 }
 /*  end reminder */
 
+/* start latest-post */
+.latest-post img {
+  width: calc(50rem / 16);
+  height: calc(50rem / 16);
+}
+.latest-post .post div:first-of-type h3 {
+  font-size: var(--base-font);
+}
+.latest-post .post > p {
+  min-height: calc(150rem / 16);
+  line-height: 1.8;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+/* end latest-post */
+
 /* start animations */
 @keyframes in-progress {
   0% {
