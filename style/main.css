@@ -768,6 +768,80 @@ main .container {
 }
 /* end latest-post */
 
+/* start social */
+.social .row i {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-content: center;
+  color: white;
+  font-size: var(--large-font);
+  transition: transform var(--transition-period);
+  -webkit-transition: transform var(--transition-period);
+  -moz-transition: transform var(--transition-period);
+  -ms-transition: transform var(--transition-period);
+  -o-transition: transform var(--transition-period);
+}
+.social .row i:hover {
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+}
+.social .row p {
+  flex: 1;
+  font-size: var(--small-font);
+}
+.social .row span {
+  color: white;
+  font-size: var(--x-small-font);
+  padding: calc(5rem / 16);
+  min-width: calc(80rem / 16);
+  text-align: center;
+}
+.social .row:nth-of-type(1) {
+  background-color: rgb(29 160 242 / 20%);
+  color: #1da1f2;
+}
+.social .row:nth-of-type(1) i {
+  background-color: #1da1f2;
+}
+.social .row:nth-of-type(1) span {
+  background-color: #1da1f2;
+}
+.social .row:nth-of-type(2) {
+  background-color: rgb(24 119 242 / 20%);
+  color: #1877f2;
+}
+.social .row:nth-of-type(2) i {
+  background-color: #1877f2;
+}
+.social .row:nth-of-type(2) span {
+  background-color: #1877f2;
+}
+.social .row:nth-of-type(3) {
+  background-color: rgb(255 0 0 / 20%);
+  color: #ff0000;
+}
+.social .row:nth-of-type(3) i {
+  background-color: #ff0000;
+}
+.social .row:nth-of-type(3) span {
+  background-color: #ff0000;
+}
+.social .row:nth-of-type(4) {
+  background-color: rgb(10 102 194 / 20%);
+  color: #0a66c2;
+}
+.social .row:nth-of-type(4) i {
+  background-color: #0a66c2;
+}
+.social .row:nth-of-type(4) span {
+  background-color: #0a66c2;
+}
+/* end social */
+
 /* start animations */
 @keyframes in-progress {
   0% {
