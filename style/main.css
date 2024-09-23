@@ -50,28 +50,36 @@ video {
 /* end main rules */
 
 /* start scroll bar */
-body {
+:root {
   --sb-track-color: #eeeeee;
   --sb-thumb-color: #0075ff;
-  --sb-size: 8px;
+  --sb-size: 15px;
 }
 
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: var(--sb-size);
 }
 
-body::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
   background: var(--sb-track-color);
-  border-radius: 6px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
 
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background: var(--sb-thumb-color);
-  border-radius: 6px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
 
 @supports not selector(::-webkit-scrollbar) {
-  body {
+  * {
     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
 }
@@ -88,7 +96,7 @@ aside {
   background-color: #fff;
   box-shadow: 0 0 10px #ddd;
   min-height: 100vh;
-  flex-basis: min(250px, 15%);
+  flex-basis: min(250px, 15vw);
 }
 aside > div {
   position: sticky;
@@ -724,10 +732,6 @@ main .container {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
 }
 .reminder .task span {
   font-size: var(--x-small-font);
@@ -842,12 +846,71 @@ main .container {
 }
 /* end social */
 
+/* start all-projects */
+.all-projects .table-container {
+  width: calc(calc(100vw - min(250px, 15vw)) - 40px);
+  overflow: auto;
+}
+
+.all-projects table {
+  border-spacing: 0;
+  text-align: center;
+  border-collapse: collapse;
+  width: max(100%, calc(1000rem / 16));
+}
+.all-projects tbody tr {
+  transition: var(--transition-period);
+  -webkit-transition: var(--transition-period);
+  -moz-transition: var(--transition-period);
+  -ms-transition: var(--transition-period);
+  -o-transition: var(--transition-period);
+}
+.all-projects tbody tr:hover {
+  background-color: rgba(245, 245, 245, 0.648);
+}
+.all-projects table th,
+.all-projects table td {
+  padding: calc(15rem / 16);
+  font-size: var(--small-font);
+  border: 1px solid #eee;
+}
+.all-projects td img {
+  margin-left: calc(-20rem / 16);
+  width: calc(30rem / 16);
+  height: calc(30rem / 16);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.all-projects td span {
+  display: inline-block;
+  width: calc(100rem / 16);
+  color: white;
+  font-size: var(--x-small-font);
+  padding: calc(5rem / 16);
+  border-radius: calc(5rem / 16);
+  -webkit-border-radius: calc(5rem / 16);
+  -moz-border-radius: calc(5rem / 16);
+  -ms-border-radius: calc(5rem / 16);
+  -o-border-radius: calc(5rem / 16);
+}
+.all-projects .pending {
+  background-color: var(--orange-color);
+}
+.all-projects .completed {
+  background-color: var(--green-color);
+}
+.all-projects .progress {
+  background-color: var(--blue-color);
+}
+/* end all-projects */
+
 /* start animations */
 @keyframes in-progress {
   0% {
     background-color: var(--blue-color);
-  }
-  100% {
   }
 }
 /* end animations */
