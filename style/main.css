@@ -181,6 +181,7 @@ aside nav a {
 /* start header */
 .p-content {
   flex-grow: 1;
+  overflow: hidden;
 }
 .p-content > header {
   position: sticky;
@@ -847,11 +848,9 @@ main .container {
 /* end social */
 
 /* start all-projects */
-.all-projects .table-container {
-  width: calc(calc(100vw - min(250px, 15vw)) - 40px);
+.table-container {
   overflow: auto;
 }
-
 .all-projects table {
   border-spacing: 0;
   text-align: center;
