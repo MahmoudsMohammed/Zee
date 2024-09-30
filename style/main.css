@@ -906,6 +906,28 @@ main .container {
 }
 /* end all-projects */
 
+/* End Dashboard Page */
+
+/* Start Settings */
+@media (min-width: 768px) {
+  .settings-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(450rem / 16), 1fr));
+  }
+}
+.settings-container .site-control textarea {
+  resize: none;
+  border: 1px solid #ccc;
+  width: 100%;
+  min-height: calc(150rem / 16);
+}
+.settings-container .site-control textarea::placeholder {
+  color: var(--grey-color);
+  font-size: var(--x-small-font);
+  text-transform: capitalize;
+}
+/* End Settings */
+
 /* start animations */
 @keyframes in-progress {
   0% {
