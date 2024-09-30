@@ -909,9 +909,12 @@ main .container {
 /* End Dashboard Page */
 
 /* Start Settings */
+.settings-container {
+  display: grid;
+  gap: calc(20rem / 16);
+}
 @media (min-width: 768px) {
   .settings-container {
-    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(calc(450rem / 16), 1fr));
   }
 }
@@ -926,6 +929,57 @@ main .container {
   font-size: var(--x-small-font);
   text-transform: capitalize;
 }
+/* end site control */
+
+/* start general info */
+.settings-container .general-info label {
+  display: block;
+  margin: calc(10rem / 16) 0;
+  font-size: var(--x-small-font);
+}
+.settings-container .general-info input {
+  width: 100%;
+  padding: calc(5rem / 16);
+  font-size: var(--small-font);
+  border: 1px solid #ccc;
+  border-radius: calc(6rem / 16);
+  -webkit-border-radius: calc(6rem / 16);
+  -moz-border-radius: calc(6rem / 16);
+  -ms-border-radius: calc(6rem / 16);
+  -o-border-radius: calc(6rem / 16);
+}
+
+.settings-container .general-info input:disabled {
+  background-color: #f0f4f8;
+  color: #b2b2b2;
+  cursor: no-drop;
+}
+
+.settings-container .general-info button {
+  width: calc(80rem / 16);
+  background-color: var(--blue-color);
+  color: white;
+  border: none;
+  padding: calc(7rem / 16) 10px;
+  text-transform: capitalize;
+  font-size: var(--small-font);
+  border-radius: calc(6rem / 16);
+  -webkit-border-radius: calc(6rem / 16);
+  -moz-border-radius: calc(6rem / 16);
+  -ms-border-radius: calc(6rem / 16);
+  -o-border-radius: calc(6rem / 16);
+  transition: var(--transition-period) ease-in-out;
+  -webkit-transition: var(--transition-period) ease-in-out;
+  -moz-transition: var(--transition-period) ease-in-out;
+  -ms-transition: var(--transition-period) ease-in-out;
+  -o-transition: var(--transition-period) ease-in-out;
+  cursor: pointer;
+}
+.settings-container .general-info button:hover {
+  background-color: var(--blue-alt-color);
+}
+/* end general info */
+
 /* End Settings */
 
 /* start animations */
@@ -996,5 +1050,25 @@ main .container {
   content: '\f00c';
   color: var(--blue-color);
   left: calc(100% - 30px);
+}
+@media (max-width: 767px) {
+  .toggle .switcher {
+    width: calc(45rem / 16);
+    height: calc(17rem / 16);
+    border-radius: calc(10rem / 16);
+    -webkit-border-radius: calc(10rem / 16);
+    -moz-border-radius: calc(10rem / 16);
+    -ms-border-radius: calc(10rem / 16);
+    -o-border-radius: calc(10rem / 16);
+  }
+  .toggle .switcher::after {
+    width: calc(12.5rem / 16);
+    height: calc(12.5rem / 16);
+    font-size: 7px;
+    left: 2.5px;
+  }
+  .toggle input:checked + .switcher::after {
+    left: calc(100% - 15px);
+  }
 }
 /* end component */
