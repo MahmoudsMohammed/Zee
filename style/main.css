@@ -939,14 +939,18 @@ main .container {
 }
 .settings-container .general-info input {
   width: 100%;
-  padding: calc(5rem / 16);
-  font-size: var(--small-font);
+  padding: calc(10rem / 16);
+  font-size: calc(12rem / 16);
   border: 1px solid #ccc;
   border-radius: calc(6rem / 16);
   -webkit-border-radius: calc(6rem / 16);
   -moz-border-radius: calc(6rem / 16);
   -ms-border-radius: calc(6rem / 16);
   -o-border-radius: calc(6rem / 16);
+}
+
+.settings-container .general-info input::placeholder {
+  text-transform: capitalize;
 }
 
 .settings-container .general-info input:disabled {
@@ -979,6 +983,100 @@ main .container {
   background-color: var(--blue-alt-color);
 }
 /* end general info */
+
+/* start security-info */
+.security-info > div {
+  padding: calc(20rem / 15) 0;
+  border-bottom: 1px solid #eee;
+}
+.security-info > div:last-of-type {
+  border: none;
+  padding-bottom: 0;
+}
+.security-info button {
+  padding: calc(10rem / 16) calc(15rem / 16);
+  text-transform: capitalize;
+  font-size: var(--x-small-font);
+  border: none;
+  cursor: pointer;
+  border-radius: calc(6rem / 16);
+  -webkit-border-radius: calc(6rem / 16);
+  -moz-border-radius: calc(6rem / 16);
+  -ms-border-radius: calc(6rem / 16);
+  -o-border-radius: calc(6rem / 16);
+  transition: var(--transition-period);
+  -webkit-transition: var(--transition-period);
+  -moz-transition: var(--transition-period);
+  -ms-transition: var(--transition-period);
+  -o-transition: var(--transition-period);
+}
+.security-info > div:first-of-type button {
+  background-color: var(--blue-color);
+  color: white;
+}
+.security-info > div:first-of-type button:hover {
+  background-color: var(--blue-alt-color);
+}
+.security-info > div:last-of-type button {
+  background-color: #eee;
+}
+.security-info > div:last-of-type button:hover {
+  background-color: #ccc;
+}
+/* end security-info */
+
+/* start social info */
+.social-info .social {
+  background-color: #eee;
+  margin-bottom: calc(30rem / 16);
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: calc(6rem / 16);
+  -webkit-border-radius: calc(6rem / 16);
+  -moz-border-radius: calc(6rem / 16);
+  -ms-border-radius: calc(6rem / 16);
+  -o-border-radius: calc(6rem / 16);
+}
+.social-info .social:last-of-type {
+  margin-bottom: 0;
+}
+.social-info .social span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(40rem / 16);
+  border-right: 1px solid #ccc;
+  color: #777;
+  transition: var(--transition-period);
+  -webkit-transition: var(--transition-period);
+  -moz-transition: var(--transition-period);
+  -ms-transition: var(--transition-period);
+  -o-transition: var(--transition-period);
+}
+.social-info .social:first-of-type:focus-within span {
+  color: #1da1f2;
+}
+.social-info .social:nth-of-type(2):focus-within span {
+  color: #1877f2;
+}
+.social-info .social:nth-of-type(3):focus-within span {
+  color: #0a66c2;
+}
+.social-info .social:last-of-type:focus-within span {
+  color: #ff0000;
+}
+.social-info .social input {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  padding: calc(8rem / 16);
+  font-size: var(--x-small-font);
+}
+.social-info .social input::placeholder {
+  text-transform: capitalize;
+  font-size: var(--x-small-font);
+}
+/* end social info */
 
 /* End Settings */
 

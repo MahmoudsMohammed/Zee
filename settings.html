@@ -136,9 +136,9 @@
                 </p>
               </header>
               <label for="first" class="c-grey">first name</label>
-              <input type="text" id="first" />
+              <input type="text" id="first" placeholder="first name" />
               <label for="last" class="c-grey">last name</label>
-              <input type="text" id="last" />
+              <input type="text" id="last" placeholder="last name" />
               <label for="email" class="c-grey">email</label>
               <div class="d-flex gap-10">
                 <input
@@ -151,6 +151,68 @@
               </div>
             </section>
             <!-- end general info -->
+
+            <!-- start security info -->
+            <section class="security-info bg-white rad-10 p-20 t-cap">
+              <header>
+                <h2 class="m-0">security info</h2>
+                <p class="c-grey f-small">
+                  security information about your Account
+                </p>
+              </header>
+              <div class="d-flex align-center justify-between">
+                <div class="content">
+                  <p class="m-0 mb-10">password</p>
+                  <span class="c-grey f-small">Last Change On 25/10/2021</span>
+                </div>
+                <button class="">change</button>
+              </div>
+              <div class="d-flex align-center justify-between">
+                <div class="content">
+                  <p class="m-0 mb-10">Two-Factor Authentication</p>
+                  <span class="c-grey f-small">Enable/Disable The Feature</span>
+                </div>
+                <label class="toggle"
+                  ><input type="checkbox" />
+                  <div class="switcher"></div
+                ></label>
+              </div>
+              <div class="d-flex align-center justify-between">
+                <div class="content">
+                  <p class="m-0 mb-10">Devices</p>
+                  <span class="c-grey f-small"
+                    >Check The Login Devices List</span
+                  >
+                </div>
+                <button class="">Devices</button>
+              </div>
+            </section>
+            <!-- end security info -->
+
+            <!-- start social info -->
+            <section class="social-info bg-white rad-10 p-20 t-cap">
+              <header>
+                <h2 class="m-0">social info</h2>
+                <p class="c-grey f-small">social media information</p>
+              </header>
+              <div class="social">
+                <span><i class="fa-brands fa-twitter"></i></span
+                ><input type="text" placeholder="twitter username" />
+              </div>
+              <div class="social">
+                <span><i class="fa-brands fa-facebook"></i></span
+                ><input type="text" placeholder="facebook username" />
+              </div>
+              <div class="social">
+                <span><i class="fa-brands fa-linkedin"></i></span
+                ><input type="text" placeholder="linkedin username" />
+              </div>
+              <div class="social">
+                <span><i class="fa-brands fa-youtube"></i></span
+                ><input type="text" placeholder="youtube username" />
+              </div>
+            </section>
+            <!-- end social info -->
           </div>
         </main>
         <!-- end main -->
