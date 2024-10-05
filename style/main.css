@@ -1069,7 +1069,7 @@ main .container {
   flex-grow: 1;
   background-color: transparent;
   border: none;
-  padding: calc(8rem / 16);
+  padding: calc(10rem / 16);
   font-size: var(--x-small-font);
 }
 .social-info .social input::placeholder {
