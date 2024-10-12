@@ -1169,6 +1169,106 @@ main .container {
 }
 /* end widgets-control */
 
+/* start backup-manager */
+.backup-manager input {
+  appearance: none;
+}
+.backup-manager label {
+  cursor: pointer;
+}
+.backup-manager .time {
+  display: flex;
+  flex-direction: column;
+  gap: calc(10rem / 16);
+  padding-bottom: calc(20rem / 16);
+  border-bottom: 1px solid #eee;
+}
+.backup-manager .time label {
+  padding-left: calc(25rem / 16);
+  position: relative;
+}
+.backup-manager .time label::after {
+  content: '';
+  position: absolute;
+  left: calc(-5rem / 16);
+  width: calc(15rem / 16);
+  height: calc(15rem / 16);
+  border: 2px solid #ccc;
+  transition: var(--transition-period);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: var(--transition-period);
+  -moz-transition: var(--transition-period);
+  -ms-transition: var(--transition-period);
+  -o-transition: var(--transition-period);
+}
+.backup-manager .time label:hover::after {
+  border-color: var(--blue-alt-color);
+}
+
+.backup-manager .time label::before {
+  content: '';
+  position: absolute;
+  transform: scale(0);
+  left: calc(-1.75rem / 16);
+  top: calc(3.5rem / 16);
+  width: calc(12rem / 16);
+  height: calc(12rem / 16);
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+}
+.backup-manager .time input:checked + label::after {
+  border-color: var(--blue-color);
+}
+.backup-manager .time input:checked + label::before {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+.backup-manager .server {
+  display: flex;
+  gap: calc(10rem / 16);
+}
+@media (max-width: 767px) {
+  .backup-manager .server {
+    flex-direction: column;
+  }
+}
+.backup-manager .server label {
+  flex-grow: 1;
+}
+.backup-manager .server div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(15rem / 16);
+  border: 2px solid #eee;
+  padding: calc(10rem / 16);
+  border-radius: calc(10rem / 16);
+  -webkit-border-radius: calc(10rem / 16);
+  -moz-border-radius: calc(10rem / 16);
+  -ms-border-radius: calc(10rem / 16);
+  -o-border-radius: calc(10rem / 16);
+}
+.backup-manager .server input:checked + div {
+  color: var(--blue-color);
+  border-color: var(--blue-color);
+}
+/* end backup-manager */
+
 /* End Settings */
 
 /* start animations */

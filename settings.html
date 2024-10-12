@@ -220,20 +220,60 @@
                 <h2 class="m-0">widget control</h2>
                 <p class="c-grey">show/hide widgets</p>
               </header>
-              <input type="checkbox" name="" id="draft" />
+              <input type="checkbox" name="" id="draft" checked />
               <label for="draft">Quick Draft</label>
-              <input type="checkbox" name="" id="yearly" />
+              <input type="checkbox" name="" id="yearly" checked />
               <label for="yearly">Yearly Targets</label>
               <input type="checkbox" name="" id="tickets" />
               <label for="tickets">Tickets Statistics</label>
-              <input type="checkbox" name="" id="news" />
+              <input type="checkbox" name="" id="news" checked />
               <label for="news">Latest News</label>
               <input type="checkbox" name="" id="tasks" />
               <label for="tasks">Latest Tasks</label>
-              <input type="checkbox" name="" id="search" />
+              <input type="checkbox" name="" id="search" checked />
               <label for="search">Top search items</label>
             </section>
             <!-- end widgets control -->
+
+            <!-- start backup manager -->
+            <section class="backup-manager bg-white rad-10 p-20 t-cap">
+              <header>
+                <h2 class="m-0">backup manager</h2>
+                <p class="c-grey">Control Backup Time And Location</p>
+              </header>
+              <div class="time">
+                <input type="radio" id="daily" name="time" checked/>
+                <label for="daily">Daily</label>
+                <input type="radio" id="weekly" name="time" />
+                <label for="weekly">Weekly</label>
+                <input type="radio" id="monthly" name="time" />
+                <label for="monthly">Monthly</label>
+              </div>
+              <div class="server">
+                <label>
+                  <input type="radio" name="server" checked/>
+                  <div>
+                    <i class="fa-solid fa-server"></i>
+                    AWS
+                  </div>
+                </label>
+                <label>
+                  <input type="radio" name="server" />
+                  <div>
+                    <i class="fa-solid fa-server"></i>
+                    Lol Cloud
+                  </div>
+                </label>
+                <label>
+                  <input type="radio" name="server" />
+                  <div>
+                    <i class="fa-solid fa-server"></i>
+                    Sigma
+                  </div>
+                </label>
+              </div>
+            </section>
+            <!-- end backup manager -->
           </div>
         </main>
         <!-- end main -->
