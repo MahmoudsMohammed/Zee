@@ -183,6 +183,15 @@ aside nav a {
   flex-grow: 1;
   overflow: hidden;
 }
+.p-content main {
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .p-content main {
+    padding: 20px;
+  }
+}
+
 .p-content > header {
   position: sticky;
   z-index: 5;
@@ -1077,6 +1086,88 @@ main .container {
   font-size: var(--x-small-font);
 }
 /* end social info */
+
+/* start widgets-control */
+.widgets-control input {
+  appearance: none;
+}
+.widgets-control label {
+  display: block;
+  position: relative;
+  margin-left: calc(30rem / 16);
+  font-size: var(--small-font);
+  cursor: pointer;
+}
+.widgets-control label::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: var(--transition-period);
+  left: calc(-25rem / 16);
+  width: calc(15rem / 16);
+  height: calc(15rem / 16);
+  border: 1px solid #c3c3c3;
+  border-radius: calc(4rem / 16);
+  -webkit-border-radius: calc(4rem / 16);
+  -moz-border-radius: calc(4rem / 16);
+  -ms-border-radius: calc(4rem / 16);
+  -o-border-radius: calc(4rem / 16);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transition: var(--transition-period);
+  -moz-transition: var(--transition-period);
+  -ms-transition: var(--transition-period);
+  -o-transition: var(--transition-period);
+}
+.widgets-control label:hover::after {
+  border-color: var(--blue-alt-color);
+}
+.widgets-control input:checked + label::after {
+  border-color: var(--blue-alt-color);
+}
+.widgets-control label::before {
+  content: '\f00c';
+  position: absolute;
+  top: 50%;
+  margin-top: calc(-8rem / 16);
+  transition: var(--transition-period);
+  left: calc(-25rem / 16);
+  font-family: var(--fa-style-family-classic);
+  font-weight: 900;
+  background-color: var(--blue-color);
+  color: white;
+  font-size: 10px;
+  width: calc(16rem / 16);
+  height: calc(16rem / 16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: calc(4rem / 16);
+  -webkit-border-radius: calc(4rem / 16);
+  -moz-border-radius: calc(4rem / 16);
+  -ms-border-radius: calc(4rem / 16);
+  -o-border-radius: calc(4rem / 16);
+  -webkit-transition: var(--transition-period);
+  -moz-transition: var(--transition-period);
+  -ms-transition: var(--transition-period);
+  -o-transition: var(--transition-period);
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+}
+.widgets-control input:checked + label::before {
+  transform: scale(1) rotate(1turn);
+  -webkit-transform: scale(1) rotate(1turn);
+  -moz-transform: scale(1) rotate(1turn);
+  -ms-transform: scale(1) rotate(1turn);
+  -o-transform: scale(1) rotate(1turn);
+}
+/* end widgets-control */
 
 /* End Settings */
 
