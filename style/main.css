@@ -1276,6 +1276,11 @@ main .container {
   display: flex;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .profile-container .info {
+    flex-direction: column;
+  }
+}
 .profile-container .info .user {
   display: flex;
   flex-direction: column;
@@ -1283,6 +1288,11 @@ main .container {
   align-items: center;
   height: calc(350rem / 16);
   border-right: 1px solid #eee;
+}
+@media (max-width: 768px) {
+  .profile-container .info .user {
+    border-right: none;
+  }
 }
 .profile-container .info img {
   width: calc(120rem / 16);
@@ -1318,7 +1328,23 @@ main .container {
 }
 .profile-container .info .info-setting > div {
   border-bottom: 1px solid #eee;
-  padding: calc(15rem / 16) 0;
+  padding: calc(20rem / 16);
+  transition: var(--transition-period);
+  -webkit-transition: var(--transition-period);
+  -moz-transition: var(--transition-period);
+  -ms-transition: var(--transition-period);
+  -o-transition: var(--transition-period);
+}
+.profile-container .info .info-setting > div:last-of-type {
+  border: none;
+}
+.profile-container .info .info-setting > div:hover {
+  background-color: #f1f1f1;
+  cursor: default;
+}
+.profile-container .info-setting > div > div {
+  flex-wrap: wrap;
+  gap: calc(20rem / 16);
 }
 .profile-container .toggle .switcher {
   height: calc(20rem / 16);
