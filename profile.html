@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <!-- Font Awesome- -->
+    <link rel="stylesheet" href="./style/all.min.css" />
+    <link rel="stylesheet" href="./style/framework.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <div class="page">
+      <!-- start aside -->
+      <aside class="py-20 px-10">
+        <div>
+          <p class="t-center f-large f-bold m-0">Zee</p>
+          <nav>
+            <ul>
+              <li>
+                <a href="./index.html">
+                  <i class="fa-solid fa-chart-line fa-fw"></i>
+                  <span class="hide-mobile">Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="./settings.html">
+                  <i class="fa-solid fa-gear fa-fw"></i>
+                  <span class="hide-mobile">Settings</span>
+                </a>
+              </li>
+              <li class="active">
+                <a href="#">
+                  <i class="fa-solid fa-user fa-fw"></i>
+                  <span class="hide-mobile">Profile</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-list-check fa-fw"></i>
+                  <span class="hide-mobile">Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                  <span class="hide-mobile">Courses</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-user-group fa-fw"></i>
+                  <span class="hide-mobile">Friends</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-file fa-fw"></i>
+                  <span class="hide-mobile">Files</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-comments-dollar fa-fw"></i>
+                  <span class="hide-mobile">Plans</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      <!-- end aside -->
+
+      <!-- start page content -->
+      <div class="p-content">
+        <!-- start header -->
+        <header class="d-flex justify-between bg-white p-10 align-center">
+          <div class="search p-10">
+            <input type="search" placeholder="Type A Keyword" />
+          </div>
+          <div class="user d-flex gap-20 align-center">
+            <i class="fa-regular fa-bell fa-lg"></i>
+            <figure class="m-0">
+              <img src="./static/avatar.png" alt="" />
+            </figure>
+          </div>
+        </header>
+        <!-- end header -->
+
+        <!-- start main -->
+        <main class="p-20">
+          <h1 class="pageHead">Profile</h1>
+          <div class="profile-container">
+            <section class="info p-20 rad-10 bg-white t-cap d-flex">
+              <div class="user t-center px-20">
+                <img src="./static/avatar.png" alt="" />
+                <h4 class="m-0 my-10">Mahmoud Mohammed</h4>
+                <span class="c-grey f-small">level 20</span>
+                <div class="progress my-10">
+                  <span style="width: 77%"></span>
+                </div>
+                <div class="rank my-10">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="c-grey f-small">506 rating</span>
+              </div>
+              <div class="info-setting px-20">
+                <div class="general">
+                  <p class="m-0 c-grey">General Information</p>
+                  <div class="d-flex justify-between my-20">
+                    <div>
+                      <span class="c-grey">Full Name: </span
+                      ><span >Mahmoud Mohammed</span>
+                    </div>
+                    <div>
+                      <span class="c-grey">Gender: </span
+                      ><span >Male</span>
+                    </div>
+                    <div>
+                      <span class="c-grey">Country: </span
+                      ><span >egypt</span>
+                    </div>
+                  </div>
+                  <label class="toggle"
+                    ><input type="checkbox" />
+                    <div class="switcher"></div
+                  ></label>
+                </div>
+                <div class="personal">
+                  <p class="m-0 c-grey">Personal Information</p>
+                  <div class="d-flex justify-between my-20">
+                    <div>
+                      <span class="c-grey">Email: </span
+                      ><span >o@nn.sa</span>
+                    </div>
+                    <div>
+                      <span class="c-grey"> Phone: </span
+                      ><span >01099088962</span>
+                    </div>
+                    <div>
+                      <span class="c-grey">Date Of Birth: </span
+                      ><span >24/5/2000</span>
+                    </div>
+                  </div>
+                  <label class="toggle"
+                    ><input type="checkbox" />
+                    <div class="switcher"></div
+                  ></label>
+                </div>
+                <div class="job">
+                  <p class="m-0 c-grey">Job information</p>
+                  <div class="d-flex justify-between my-20">
+                    <div>
+                      <span class="c-grey">Title: </span
+                      ><span >Front-end Developer</span>
+                    </div>
+                    <div>
+                      <span class="c-grey"> Programming Language: </span
+                      ><span >JavaScript</span>
+                    </div>
+                    <div>
+                      <span class="c-grey"> Years Of Experience: </span
+                      ><span >+2</span>
+                    </div>
+                  </div>
+                  <label class="toggle"
+                    ><input type="checkbox" />
+                    <div class="switcher"></div
+                  ></label>
+                </div>
+                <div class="billing">
+                  <p class="m-0 c-grey">billing Information</p>
+                  <div class="d-flex justify-between my-20">
+                    <div>
+                      <span class="c-grey">Payment Method: </span
+                      ><span >Paypal</span>
+                    </div>
+                    <div>
+                      <span class="c-grey">Email: </span
+                      ><span >email@website.com</span>
+                    </div>
+                    <div>
+                      <span class="c-grey">Subscription: </span
+                      ><span >Monthly</span>
+                    </div>
+                  </div>
+                  <label class="toggle"
+                    ><input type="checkbox" />
+                    <div class="switcher"></div
+                  ></label>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+        <!-- end main -->
+      </div>
+      <!-- end page content -->
+    </div>
+  </body>
+</html>

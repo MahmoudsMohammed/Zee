@@ -1271,6 +1271,69 @@ main .container {
 
 /* End Settings */
 
+/* Start Profile */
+.profile-container .info {
+  display: flex;
+  align-items: center;
+}
+.profile-container .info .user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(350rem / 16);
+  border-right: 1px solid #eee;
+}
+.profile-container .info img {
+  width: calc(120rem / 16);
+  height: calc(120rem / 16);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.profile-container .info .progress {
+  background-color: #eee;
+  height: calc(6rem / 16);
+  border-radius: calc(6rem / 16);
+  -webkit-border-radius: calc(6rem / 16);
+  -moz-border-radius: calc(6rem / 16);
+  -ms-border-radius: calc(6rem / 16);
+  -o-border-radius: calc(6rem / 16);
+}
+.profile-container .progress span {
+  display: block;
+  height: 100%;
+  background-color: var(--blue-color);
+  border-radius: calc(6rem / 16);
+}
+.profile-container .info i {
+  color: var(--orange-color);
+  font-size: var(--small-font);
+}
+.profile-container .info .info-setting {
+  flex-grow: 1;
+  font-size: var(--x-small-font);
+}
+.profile-container .info .info-setting > div {
+  border-bottom: 1px solid #eee;
+  padding: calc(15rem / 16) 0;
+}
+.profile-container .toggle .switcher {
+  height: calc(20rem / 16);
+}
+.profile-container .toggle .switcher::after {
+  width: calc(12rem / 16);
+  height: calc(12rem / 16);
+  font-size: calc(7rem / 16);
+  left: 4px;
+}
+.profile-container .toggle input:checked + .switcher::after {
+  left: calc(100% - calc(16rem / 16));
+}
+/* End Profile */
+
 /* start animations */
 @keyframes in-progress {
   0% {
