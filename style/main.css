@@ -1428,6 +1428,88 @@ main .container {
 }
 /* End Profile */
 
+/* start projects */
+.projects-container {
+  display: grid;
+  gap: calc(20rem / 16);
+}
+
+@media (min-width: 1200px) {
+  .projects-container {
+    grid-template-columns: repeat(2,50%);
+  }
+}
+.projects-container header + p {
+  font-size: var(--x-small-font);
+  max-width: 100%;
+  white-space: wrap;
+  line-height: calc(20rem / 16);
+}
+.projects-container .members {
+  margin-top: calc(50rem / 16);
+}
+.projects-container img {
+  position: relative;
+  border: 2px solid white;
+  width: calc(40rem / 16);
+  height: calc(40rem / 16);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.projects-container img:not(:first-of-type) {
+  margin-left: calc(-20rem / 16);
+}
+.projects-container img:hover {
+  z-index: 1;
+}
+.projects-container .area {
+  display: flex;
+  gap: calc(10rem / 16);
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.projects-container .area span {
+  background-color: #eee;
+  font-size: var(--x-small-font);
+  padding: calc(7rem / 16);
+  border-radius: calc(6rem / 16);
+  -webkit-border-radius: calc(6rem / 16);
+  -moz-border-radius: calc(6rem / 16);
+  -ms-border-radius: calc(6rem / 16);
+  -o-border-radius: calc(6rem / 16);
+}
+.projects-container .progress {
+  position: relative;
+  width: min(calc(200rem / 16), 100%);
+  height: calc(5rem / 16);
+  border-radius: calc(5rem / 16);
+  -webkit-border-radius: calc(5rem / 16);
+  -moz-border-radius: calc(5rem / 16);
+  -ms-border-radius: calc(5rem / 16);
+  -o-border-radius: calc(5rem / 16);
+}
+.projects-container .progress span {
+  position: absolute;
+  display: inline-block;
+  height: inherit;
+  background-color: var(--red-color);
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  -moz-border-radius: inherit;
+  -ms-border-radius: inherit;
+  -o-border-radius: inherit;
+}
+.projects-container .progress .semi {
+  background-color: var(--orange-color);
+}
+.projects-container .progress .completed {
+  background-color: var(--green-color);
+}
+/* end projects */
+
 /* start animations */
 @keyframes in-progress {
   0% {
