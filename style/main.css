@@ -1358,6 +1358,74 @@ main .container {
 .profile-container .toggle input:checked + .switcher::after {
   left: calc(100% - calc(16rem / 16));
 }
+
+@media (max-width: 768px) {
+  .profile-container > div {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.profile-container .skills {
+  flex-grow: 1;
+}
+.profile-container .skills div {
+  padding: calc(15rem / 16) 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  gap: calc(10rem / 16);
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .profile-container .skills div {
+    justify-content: center;
+  }
+}
+.profile-container .skills div:last-of-type {
+  border-bottom: none;
+}
+.profile-container .skills span {
+  background-color: var(--bg-color);
+  padding: calc(7rem / 16) calc(15rem / 16);
+  border-radius: calc(10rem / 16);
+  -webkit-border-radius: calc(10rem / 16);
+  -moz-border-radius: calc(10rem / 16);
+  -ms-border-radius: calc(10rem / 16);
+  -o-border-radius: calc(10rem / 16);
+  font-size: var(--x-small-font);
+  text-transform: capitalize;
+  display: inline-block;
+}
+.profile-container .activities {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.profile-container .activities > div {
+  border-bottom: 1px solid #eee;
+  padding: calc(20rem / 16);
+}
+.profile-container .activities > div:last-of-type {
+  border: none;
+  padding-bottom: 0;
+}
+.profile-container .activities .content {
+  flex-grow: 1;
+}
+@media (max-width: 768px) {
+  .profile-container .activities > div,
+  .profile-container .activities > div div {
+    flex-direction: column;
+  }
+  .profile-container .activities > div div {
+    gap: calc(10rem / 16);
+  }
+}
+.profile-container .activities img {
+  width: calc(65rem / 16);
+  height: calc(65rem / 16);
+}
 /* End Profile */
 
 /* start animations */

@@ -46,6 +46,9 @@
 .m-20 {
   margin: calc(20rem / 16);
 }
+.mt-20 {
+  margin-top: calc(20rem / 16);
+}
 .mb-10 {
   margin-bottom: calc(10rem / 16);
 }
