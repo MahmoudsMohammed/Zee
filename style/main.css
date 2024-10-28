@@ -1536,6 +1536,56 @@ main .container {
 }
 /* end projects */
 
+/* start courses */
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(300rem / 16), 1fr));
+  gap: calc(20rem / 16);
+}
+.courses-container > section {
+  overflow: hidden;
+}
+.courses-container figure {
+  position: relative;
+}
+.courses-container figure img:first-of-type {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.courses-container figure img:last-of-type {
+  position: absolute;
+  top: calc(20rem / 16);
+  left: calc(20rem / 16);
+  width: calc(60rem / 16);
+  height: calc(60rem / 16);
+  border: 2px solid white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.courses-container p:last-of-type {
+  font-size: var(--x-small-font);
+  font-weight: 500;
+  line-height: calc(20rem / 16);
+}
+.courses-container .info{
+  border-top: 1px solid #eee;
+  padding: calc(10rem / 16) calc(20rem / 16);
+  margin-top: calc(20rem / 16);
+}
+.courses-container .info span:nth-of-type(2){
+  color: white;
+  background-color: var(--blue-color);
+  font-size: var(--x-small-font);
+  position: relative;
+  top: -25px;
+  padding: calc(5rem / 16) calc(8rem / 16);
+}
+/* end courses */
+
 /* start animations */
 @keyframes in-progress {
   0% {
