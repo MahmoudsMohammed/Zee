@@ -1454,6 +1454,11 @@ main .container {
   white-space: wrap;
   line-height: calc(20rem / 16);
 }
+@media (max-width: 768px) {
+  .projects-container header + p {
+    text-align: center;
+  }
+}
 .projects-container .members {
   margin-top: calc(50rem / 16);
 }
