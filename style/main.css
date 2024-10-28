@@ -1436,8 +1436,17 @@ main .container {
 
 @media (min-width: 1200px) {
   .projects-container {
-    grid-template-columns: repeat(2,50%);
+    grid-template-columns: repeat(2, 50%);
   }
+}
+@media (max-width: 768px) {
+  .projects-container header {
+    flex-direction: column;
+    gap: calc(10rem / 16);
+  }
+}
+.projects-container header p {
+  font-weight: 600;
 }
 .projects-container header + p {
   font-size: var(--x-small-font);
@@ -1471,6 +1480,12 @@ main .container {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
+@media (max-width: 768px) {
+  .projects-container .area {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .projects-container .area span {
   background-color: #eee;
   font-size: var(--x-small-font);
@@ -1481,10 +1496,16 @@ main .container {
   -ms-border-radius: calc(6rem / 16);
   -o-border-radius: calc(6rem / 16);
 }
+@media (max-width: 768px) {
+  .projects-container .status {
+    flex-direction: column;
+    gap: calc(20rem / 16);
+  }
+}
 .projects-container .progress {
   position: relative;
   width: min(calc(200rem / 16), 100%);
-  height: calc(5rem / 16);
+  height: calc(8rem / 16);
   border-radius: calc(5rem / 16);
   -webkit-border-radius: calc(5rem / 16);
   -moz-border-radius: calc(5rem / 16);
