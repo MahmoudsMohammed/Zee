@@ -1679,8 +1679,44 @@ main .container {
 /* end friends */
 
 /* start files */
+.files-container {
+  align-items: start;
+}
+.files-container .files {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(200rem / 16), 1fr));
+  gap: calc(20rem / 16);
+}
+.files-container .file {
+  font-size: var(--x-small-font);
+}
+.files-container .file:hover img {
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+}
+.files-container .files img {
+  width: calc(50rem / 16);
+  height: calc(50rem / 16);
+  transition: var(--transition-period);
+  -webkit-transition: var(--transition-period);
+  -moz-transition: var(--transition-period);
+  -ms-transition: var(--transition-period);
+  -o-transition: var(--transition-period);
+}
+.files-container .file > div:first-of-type {
+  flex-direction: column;
+}
+.files-container .file > div:last-of-type {
+  margin-top: calc(10rem / 16);
+  padding-top: calc(10rem / 16);
+  border-top: 1px solid #eee;
+}
 .files-container .statistics {
-  max-width: calc(300rem / 16);
+  min-width: calc(250rem / 16);
 }
 .files-container .statistics > div {
   border: 1px solid #eee;
