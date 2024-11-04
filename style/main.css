@@ -1586,7 +1586,7 @@ main .container {
 }
 /* end courses */
 
-/* start profile */
+/* start friends */
 .friends-container {
   display: grid;
   gap: calc(20rem / 16);
@@ -1676,12 +1676,85 @@ main .container {
   background-color: var(--red-color);
   border: none;
 }
-/* end profile */
+/* end friends */
+
+/* start files */
+.files-container .statistics {
+  max-width: calc(300rem / 16);
+}
+.files-container .statistics > div {
+  border: 1px solid #eee;
+  font-size: var(--x-small-font);
+  margin-bottom: calc(10rem / 16);
+}
+.files-container .statistics i {
+  padding: calc(12rem / 16);
+}
+.files-container .statistics i.pdf {
+  background-color: #cce3ff;
+  color: var(--blue-color);
+}
+.files-container .statistics i.image {
+  background-color: #d3f3df;
+  color: var(--green-color);
+}
+.files-container .statistics i.word {
+  background-color: #fdecce;
+  color: var(--orange-color);
+}
+.files-container .statistics i.csv {
+  background-color: #f4433635;
+  color: var(--red-color);
+}
+.files-container .statistics .content {
+  flex-direction: column;
+}
+.files-container .statistics button {
+  display: block;
+  margin: auto;
+  color: white;
+  background-color: var(--blue-color);
+  border: none;
+  padding: calc(12rem / 16) calc(20rem / 16);
+  cursor: pointer;
+  transition: var(--transition-period);
+  -webkit-transition: var(--transition-period);
+  -moz-transition: var(--transition-period);
+  -ms-transition: var(--transition-period);
+  -o-transition: var(--transition-period);
+}
+.files-container .statistics button:hover {
+  background-color: var(--blue-alt-color);
+}
+.files-container .statistics button i {
+  padding: 0;
+}
+.files-container .statistics button:hover i {
+  animation: up-down 0.4s infinite alternate ease-in-out;
+  -webkit-animation: up-down 0.4s infinite alternate ease-in-out;
+}
+/* end files */
 
 /* start animations */
 @keyframes in-progress {
   0% {
     background-color: var(--blue-color);
+  }
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
   }
 }
 /* end animations */
