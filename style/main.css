@@ -1571,12 +1571,12 @@ main .container {
   font-weight: 500;
   line-height: calc(20rem / 16);
 }
-.courses-container .info{
+.courses-container .info {
   border-top: 1px solid #eee;
   padding: calc(10rem / 16) calc(20rem / 16);
   margin-top: calc(20rem / 16);
 }
-.courses-container .info span:nth-of-type(2){
+.courses-container .info span:nth-of-type(2) {
   color: white;
   background-color: var(--blue-color);
   font-size: var(--x-small-font);
@@ -1585,6 +1585,88 @@ main .container {
   padding: calc(5rem / 16) calc(8rem / 16);
 }
 /* end courses */
+
+/* start profile */
+.friends-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(300rem / 16), 1fr));
+  gap: calc(20rem / 16);
+}
+.friends-container .contact i {
+  cursor: pointer;
+  transition: var(--transition-period);
+  background-color: var(--bg-color);
+  font-size: var(--x-small-font);
+  color: var(--grey-color);
+  padding: calc(8rem / 16);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: var(--transition-period);
+  -moz-transition: var(--transition-period);
+  -ms-transition: var(--transition-period);
+  -o-transition: var(--transition-period);
+}
+.friends-container .contact i:hover {
+  color: white;
+  background-color: var(--blue-color);
+}
+.friends-container .info img {
+  width: calc(100rem / 16);
+  height: calc(100rem / 16);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.friends-container .status {
+  position: relative;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  font-size: var(--x-small-font);
+}
+.friends-container .status::after {
+  content: 'VIP';
+  position: absolute;
+  top: 50%;
+  right: calc(10rem / 16);
+  font-size: calc(40rem / 16);
+  opacity: 0.3;
+  color: var(--red-color);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.friends-container .status span {
+  margin-left: calc(5rem / 16);
+}
+.friends-container .foot {
+  font-size: var(--x-small-font);
+}
+.friends-container .foot a,
+.friends-container .foot button {
+  color: white;
+  padding: calc(3rem / 16) calc(10rem / 16);
+  border-radius: calc(5rem / 16);
+  -webkit-border-radius: calc(5rem / 16);
+  -moz-border-radius: calc(5rem / 16);
+  -ms-border-radius: calc(5rem / 16);
+  -o-border-radius: calc(5rem / 16);
+}
+.friends-container .foot a {
+  display: inline-block;
+  background-color: var(--blue-color);
+}
+.friends-container .foot button {
+  background-color: var(--red-color);
+  border: none;
+}
+/* end profile */
 
 /* start animations */
 @keyframes in-progress {
