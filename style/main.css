@@ -1682,11 +1682,22 @@ main .container {
 .files-container {
   align-items: start;
 }
+@media (max-width: 767px) {
+  .files-container {
+    align-items: unset;
+    flex-direction: column;
+  }
+}
 .files-container .files {
   flex-grow: 1;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(calc(200rem / 16), 1fr));
   gap: calc(20rem / 16);
+}
+@media (max-width: 767px) {
+  .files-container .files {
+    order: 2;
+  }
 }
 .files-container .file {
   font-size: var(--x-small-font);
@@ -1716,7 +1727,7 @@ main .container {
   border-top: 1px solid #eee;
 }
 .files-container .statistics {
-  min-width: calc(250rem / 16);
+  min-width: calc(240rem / 16);
 }
 .files-container .statistics > div {
   border: 1px solid #eee;
