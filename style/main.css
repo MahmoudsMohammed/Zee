@@ -1589,8 +1589,12 @@ main .container {
 /* start profile */
 .friends-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(calc(300rem / 16), 1fr));
   gap: calc(20rem / 16);
+}
+@media (min-width: 768px) {
+  .friends-container {
+    grid-template-columns: repeat(auto-fill, minmax(calc(300rem / 16), 1fr));
+  }
 }
 .friends-container .contact i {
   cursor: pointer;
@@ -1628,7 +1632,7 @@ main .container {
   border-bottom: 1px solid #eee;
   font-size: var(--x-small-font);
 }
-.friends-container .status::after {
+.friends-container .friend:nth-of-type(even) .status::after {
   content: 'VIP';
   position: absolute;
   top: 50%;
@@ -1647,6 +1651,12 @@ main .container {
 }
 .friends-container .foot {
   font-size: var(--x-small-font);
+}
+@media (max-width: 767px) {
+  .friends-container .foot {
+    gap: calc(15rem / 16);
+    flex-direction: column;
+  }
 }
 .friends-container .foot a,
 .friends-container .foot button {
