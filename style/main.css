@@ -1785,9 +1785,13 @@ main .container {
 /* start plans */
 .plans-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(calc(500rem / 16), 1fr));
   gap: calc(20rem / 16);
   font-size: var(--small-font);
+}
+@media (min-width: 768px) {
+  .plans-container {
+    grid-template-columns: repeat(auto-fill, minmax(calc(500rem / 16), 1fr));
+  }
 }
 .plans-container .plan .type {
   background-color: var(--green-color);
@@ -1798,6 +1802,14 @@ main .container {
   font-size: calc(30rem / 16);
   font-weight: 600;
 }
+.plans-container .plan:nth-of-type(2) .type {
+  background-color: var(--blue-color);
+  outline: 3px solid var(--blue-color);
+}
+.plans-container .plan:last-of-type .type {
+  background-color: var(--orange-color);
+  outline: 3px solid var(--orange-color);
+}
 .plans-container .price span:first-of-type {
   font-size: var(--small-font);
   position: relative;
@@ -1805,6 +1817,7 @@ main .container {
 }
 .plans-container li {
   display: flex;
+  font-size: var(--x-small-font);
   padding: calc(20rem / 16) 0;
   padding-left: calc(30rem / 16);
   border-bottom: 1px solid #eee;
@@ -1842,6 +1855,9 @@ main .container {
 }
 .plans-container .plan:first-of-type button {
   background-color: var(--green-color);
+}
+.plans-container .plan:nth-of-type(2) button {
+  background-color: var(--blue-color);
 }
 /* end plans */
 
