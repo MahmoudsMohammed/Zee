@@ -1782,6 +1782,69 @@ main .container {
 }
 /* end files */
 
+/* start plans */
+.plans-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(500rem / 16), 1fr));
+  gap: calc(20rem / 16);
+  font-size: var(--small-font);
+}
+.plans-container .plan .type {
+  background-color: var(--green-color);
+  color: white;
+  border: 3px solid white;
+  outline: 3px solid var(--green-color);
+  padding: calc(35rem / 16);
+  font-size: calc(30rem / 16);
+  font-weight: 600;
+}
+.plans-container .price span:first-of-type {
+  font-size: var(--small-font);
+  position: relative;
+  top: -15px;
+}
+.plans-container li {
+  display: flex;
+  padding: calc(20rem / 16) 0;
+  padding-left: calc(30rem / 16);
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+.plans-container li::before {
+  content: '\f00c';
+  font-weight: 900;
+  font-family: var(--fa-style-family-classic);
+  color: var(--green-color);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.plans-container li.not::before {
+  content: '\58';
+  color: var(--red-color);
+}
+.plans-container li i {
+  color: var(--grey-color);
+  margin-left: auto;
+  cursor: pointer;
+}
+.plans-container button {
+  display: block;
+  padding: calc(8rem / 16) calc(100rem / 16);
+  border: none;
+  margin: calc(15rem / 16) auto 0;
+  color: white;
+}
+.plans-container .plan:first-of-type button {
+  background-color: var(--green-color);
+}
+/* end plans */
+
 /* start animations */
 @keyframes in-progress {
   0% {
